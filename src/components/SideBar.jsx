@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-import { Button, Divider, Flex,IconButton } from "@chakra-ui/react";
+import { Button, Flex, IconButton } from "@chakra-ui/react";
 import {MoonIcon,SunIcon} from "@chakra-ui/icons"
 import {FiMenu,FiHome,FiUser,FiInfo,FiShoppingCart} from "react-icons/fi"
 

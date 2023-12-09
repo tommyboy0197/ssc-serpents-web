@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider, SimpleGrid,Text } from "@chakra-ui/react";
+import { SimpleGrid,Text } from "@chakra-ui/react";
 import PlayerCard from "../components/PlayerCard";
 import { useOutletContext } from "react-router-dom";
 
