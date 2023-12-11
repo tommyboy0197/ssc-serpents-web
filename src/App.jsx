@@ -1,17 +1,19 @@
 import {createBrowserRouter,createRoutesFromElements,Route,RouterProvider} from "react-router-dom";
+import { useState } from "react";
 
 import RootLayout from "./Layouts/Rootlayout";
 import Home from "./Pages/Home";
 import Players from "./Pages/Players";
-import ErrorPage from "./Pages/Error";
+import About from "./Pages/About";
+import Player from "./Pages/Player";
  
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="*" element={<RootLayout/>}>
-      <Route path="*" element={<ErrorPage />} />
+    <Route path="/" element={<RootLayout/>}>
       <Route index element={<Home />} />
       <Route path="players" element={<Players />} />
-      
+      <Route path="about" element={<About />} />
+      <Route path="players/:playername" element={<Player/>} />
     </Route>
   )
 )
