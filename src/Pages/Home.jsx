@@ -2,6 +2,7 @@ import React from "react";
 import {Button} from "@chakra-ui/react"
 
 export default function Home() {
+    document.getElementById("root").style.height = "100vh"
     return (
         <div style={{paddingTop: "50px"}}>
             <h1 style={{marginTop: "2.5vh",

@@ -3,6 +3,7 @@ import { useOutletContext, useParams } from "react-router-dom";
 import data from "./data"
 
 export default function Player() {
+    document.getElementById("root").style.height = "100vh"
     const [playerdata,setplayerdata] = useState(null)
     const {playername} = useParams()
     const [margingLeftImg,setMarginLeftImg] = useState("0")
