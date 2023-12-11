@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useOutletContext, useParams } from "react-router-dom";
 import data from "./data"
 
 export default function Player() {
     const [playerdata,setplayerdata] = useState(null)
     const {playername} = useParams()
     const [margingLeftImg,setMarginLeftImg] = useState("0")
+    const [mode] = useOutletContext()
 
     useEffect(() => {
         let playerdata = data.players.find(i => i.id === parseInt(playername))
@@ -68,10 +69,10 @@ export default function Player() {
 
     return (
         <div style={{margin: 'auto', textAlign: 'center'}}>
-            <h1 style={{fontSize: "100px",color: '#1C6E8C',"text-shadow": "-1px -1px 0 #211A1E, 1px -1px 0 #211A1E, -1px 1px 0 #211A1E, 1px 1px 0 #211A1E"}}>{playerdata.name}</h1>
-            <img src={`/${playerdata.character}.jfif`} style={{border: '10px solid #1C6E8C',borderRadius: "15px",marginLeft: margingLeftImg}} alt={playername}></img>
-            <h1 style={{fontSize: '60px', color: '#1C6E8C',"text-shadow": "-1px -1px 0 #211A1E, 1px -1px 0 #211A1E, -1px 1px 0 #211A1E, 1px 1px 0 #211A1E"}}>Peak: {playerdata.peak}</h1>
-            <h1 style={{color: '#1C6E8C',fontSize: '20px',"text-shadow": "-1px -1px 0 #404E4D, 1px -1px 0 #404E4D, -1px 1px 0 #404E4D, 1px 1px 0 #404E4D"}}>{playerdata.bio}</h1>
+            <h1 style={{fontSize: "100px",color: mode === "dark" ? '#FFE2FE' : 'black'}}>{playerdata.name}</h1>
+            <img src={`/${playerdata.character}.jfif`} style={{marginLeft: margingLeftImg, border: `10px solid ${mode === "dark" ? '#FFE2FE' : 'black'}`, borderRadius: "15px"}} alt={playername}></img>
+            <h1 style={{fontSize: '60px',color: mode === "dark" ? '#FFE2FE' : 'black'}}>Peak: {playerdata.peak}</h1>
+            <h1 style={{fontSize: '20px',color: mode === "dark" ? '#FFE2FE' : 'black'}}>{playerdata.bio}</h1>
         </div>
     )
 }

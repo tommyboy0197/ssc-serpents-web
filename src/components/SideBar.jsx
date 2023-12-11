@@ -47,7 +47,7 @@ export default function SideBar({active,sx,mode,setMode}) {
                 mb={4}
             >
                 <Flex>
-                    <Button sx={{background: 'none'}} onClick={() => setMode(mode === "light" ? "dark" : "light")}>{mode === "light" ? <MoonIcon/> : <SunIcon/>}</Button>
+                    <Button sx={{background: 'none'}} onClick={() => setMode(mode === "light" ? "dark" : "light")}>{mode === "light" ? <MoonIcon sx={{color: 'black'}}/> : <SunIcon sx={{color: 'white'}}/>}</Button>
                 </Flex>
             </Flex>
         </Flex>

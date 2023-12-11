@@ -4,7 +4,7 @@ import { useState } from "react"
 
 export default function RootLayout() {
     const [mode,setMode] = useState("dark")
-    document.getElementById("root").style.backgroundColor = mode === "light" ? "#A4BAB7" : "#274D54"
+    document.getElementById("root").style.backgroundColor = mode === "light" ? "#A4BAB7" : "#231F20"
 
 
     return (
