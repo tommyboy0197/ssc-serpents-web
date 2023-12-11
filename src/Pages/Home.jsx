@@ -12,7 +12,7 @@ export default function Home() {
                 marginLeft: "30vh",
                 fontSize: "125px",
                 fontWeight: "bold",color: '#1C6E8C'}}>SSC SERPENTS</h1>
-            <Button as="nav" href="/about" sx={{marginLeft: "70vh",marginTop: '15px'}}>About us</Button>
+            <Button as="a" href="/about" sx={{marginLeft: "70vh",marginTop: '15px',backgroundColor: '#0d77db',textColor: 'black'}}>About us</Button>
         </div>
     )
 }

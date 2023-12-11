@@ -1,11 +1,11 @@
-export default {
+const data = {
     "players": [
         {
             name: "Leo",
             team: "Overwatch A",
             peak: "Top 500",
             character: "bastion",
-            bio: "",
+            bio: "Why hello there my name is Leo my gamertag would indeed be LION WARRIOR 05 my peak is top 500 and I play mainly reaper and Bastion 😉",
             id: 2,
             role: 'team captain'
         },
@@ -32,7 +32,7 @@ export default {
             team: "Overwatch A",
             peak: "Grand Master",
             character: "bap",
-            bio: "",
+            bio: "Hey there, my name is Jack I go by Delguin online and in Overwatch. I have peaked Grandmaster 4 on support (console) playing mainly Baptiste but I also play Ana, Reaper, Cassidy and Soldier 76. ",
             id: 4,
             role: 'player'
         },
@@ -68,7 +68,7 @@ export default {
             team: "Overwatch B",
             peak: "Diamond 1",
             character: "ram",
-            bio: "",
+            bio: "Welcome traveler, my name is dan my nametag is SQUISHY in almost all games. I have hit my peak rank of diamond 1 and I mainly play life weaver, zenyata and also bastion",
             id: 7,
             role: 'player'
         },
@@ -281,3 +281,5 @@ export default {
         }
     ]
 }
+
+export default data;
