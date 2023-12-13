@@ -255,16 +255,16 @@ const data = {
         {
             name: 'Rhys',
             team: 'Rocket League B',
-            peak: 'GC',
+            peak: 'Champ',
             character: 'octane',
             bio: '',
             id: 29,
-            role: 'player'
+            role: 'team captain'
         },
         {
             name: 'Taylor',
             team: 'Rocket League B',
-            peak: 'Plat',
+            peak: 'Diamond',
             character: 'fennec',
             bio: '',
             id: 30,
