@@ -174,9 +174,9 @@ const data = {
         {
             name: 'Logan',
             team: 'Valorant A',
-            peak: 'Bronze 3',
+            peak: 'Silver 2',
             character: 'raze',
-            bio: '',
+            bio: "Sup, I'm Logan. My username is Purpziey and I am on the Valorant A for SSC Serpents",
             id: 19,
             role: 'player'
         },
