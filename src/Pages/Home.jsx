@@ -4,7 +4,7 @@ import {Button} from "@chakra-ui/react"
 export default function Home() {
     document.getElementById("root").style.height = "100vh"
     return (
-        <div style={{paddingTop: "50px"}}>
+        <div style={{margin: 'auto', textAlign: 'center'}}>
             <h1 style={{marginTop: "2.5vh",
                 marginLeft: "42.5vh",
                 fontSize: "75px",
